@@ -151,6 +151,15 @@ async function main(){
   window.gl = app.gl;
 
   await render(app);
+
+  const cForm = $('#controls');
+  cForm.on('input', function() {
+    let fData = $('input[name="texture"]:checked').val();
+    console.log(fData);
+    app.state.texture = fData;
+
+    render(app);
+  });
 }
 
 main();

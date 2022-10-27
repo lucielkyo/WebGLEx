@@ -1,10 +1,15 @@
 .welcome{
+	height: 2rem;
+	margin: 1rem;
 	color: orange;
 	font-size: 25px;
 	font-family: monospace;
 }
-.second{
-	margin-top: 10px;
+#controls{
+	position: fixed;
+	top:  0;
+	right: 0;
+	margin: 1rem;
 	color: orange;
 	font-size: 25px;
 	font-family: monospace;
