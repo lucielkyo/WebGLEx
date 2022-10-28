@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebGL Ex11</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="welcome">WebGL Let it move automatically</div>
+
+	<form id="controls" action="post">
+		<div>
+			<input type="radio" id="cat1" name="texture" value="0" checked>
+			<label for="cat1">Cat 1</label>
+			<input type="radio" id="cat2" name="texture" value="1">
+			<label for="cat2">Cat 2</label>
+			<input type="radio" id="penguin" name="texture" value="2">
+			<label for="penguin">penguin</label>
+		</div>
+		<div>
+			<input type="range" id="speed" name="speed" min="0" max="0.5" step="0.01" value="0.1">
+    		<label for="speed">Speed</label>
+		</div>
+	</form>
+	<canvas id="canvas"></canvas>
+
+	<script type="module" src="js/canvas.js"></script>
+</body>
+</html>
