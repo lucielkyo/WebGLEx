@@ -50,8 +50,15 @@ export const matrix3 = {
       -s, c, 0,
       0,  0, 1
     ]
-  }
+  },
   //[Math.cos(rad),  Math.sin(rad), 0,
   //-Math.sin(rad), Math.cos(rad), 0,
   //0,              0,             1]
+
+//取消效果用的單位矩陣
+  identity: () =>([
+    1, 0, 0,
+    0, 1, 0,
+    0, 0, 1
+  ])
 };
