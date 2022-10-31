@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebGL Ex13</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="welcome">WebGL 2D translate, scale, rotation</div>
+
+	<form id="controls" action="post">
+		<div>
+			<input type="radio" id="cat1" name="texture" value="0" checked>
+			<label for="cat1">Cat 1</label>
+			<input type="radio" id="cat2" name="texture" value="1">
+			<label for="cat2">Cat 2</label>
+			<input type="radio" id="penguin" name="texture" value="2">
+			<label for="penguin">penguin</label>
+		</div>
+		<div>
+			<input type="range" id="speed" name="speed" min="0" max="0.5" step="0.01" value="0.1">
+    		<label for="speed">Speed</label>
+		</div>
+		<div>
+			<label for="translate-x">TranslateX</label>
+			<input type="range" id="translate-x" name="translate-x" min="-150" max="150" value="0">
+		</div>
+		<div>
+		    <label for="translate-y">TranslateY</label>
+		    <input
+		      type="range" id="translate-y" name="translate-y" min="-150" max="150" value="0">
+		  </div>
+		  <div>
+		    <label for="scale">Scale</label>
+		    <input type="range" id="scale" name="scale" min="0" max="10" value="1" step="0.1">
+		  </div>
+		  <div>
+		    <label for="rotation">Rotation</label>
+		    <input type="range" id="rotation" name="rotation" min="0" max="360" value="0">
+		  </div>
+	</form>
+	<canvas id="canvas"></canvas>
+
+	<script type="module" src="js/canvas.js"></script>
+</body>
+</html>
