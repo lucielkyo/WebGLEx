@@ -8,10 +8,51 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </head>
 <body>
-	<div class="welcome">WebGL 3D sohelpme</div>
+	<div class="welcome">WebGL 3D omg</div>
 
 	<form id="controls" action="post">
-		
+		<div>
+			<label for="projection-z">ProjectionZ</label>
+			<input type="range" id="projection-z" name="projection-z" min="0" max="1000" value="400">
+		</div>
+		<div>
+			<label for="translate-x">TranslateX</label>
+			<input type="range" id="translate-x" name="translate-x" min="-300" max="300" value="150">
+		</div>
+		<div>
+		    <label for="translate-y">TranslateY</label>
+		    <input
+		      type="range" id="translate-y" name="translate-y" min="-300" max="300" value="100">
+		</div>
+		<div>
+		    <label for="translate-z">TranslateZ</label>
+		    <input
+		      type="range" id="translate-z" name="translate-z" min="-300" max="300" value="0">
+		</div>
+		<div>
+			<label for="scale">ScaleX</label>
+		    <input type="range" id="scale-x" name="scale-x" min="0" max="10" value="1" step="0.1">
+		</div>
+		<div>
+			<label for="scale">ScaleY</label>
+		    <input type="range" id="scale-y" name="scale-y" min="0" max="10" value="1" step="0.1">
+		</div>
+		<div>
+			<label for="scale">ScaleZ</label>
+		    <input type="range" id="scale-z" name="scale-z" min="0" max="10" value="1" step="0.1">
+		</div>
+		<div>
+		    <label for="rotation">RotationX</label>
+		    <input type="range" id="rotation-x" name="rotation-x" min="0" max="360" value="30">
+		</div>
+		<div>
+		    <label for="rotation">RotationY</label>
+		    <input type="range" id="rotation-y" name="rotation-y" min="0" max="360" value="30">
+		</div>
+		<div>
+		    <label for="rotation">RotationZ</label>
+		    <input type="range" id="rotation-z" name="rotation-z" min="0" max="360" value="0">
+		</div>
 	</form>
 	<canvas id="canvas"></canvas>
 
