@@ -105,7 +105,7 @@ export const matrix4 = {
   ]),
 
 //縮放
-  scale: (sx, sy) =>([
+  scale: (sx, sy, sz) =>([
     sx, 0, 0, 0,
     0, sy, 0, 0,
     0, 0,  sz, 0,
@@ -132,7 +132,7 @@ export const matrix4 = {
       0, 0, 0, 1
     ]
   },
-  rotateX: radZ => {
+  rotateZ: radZ => {
     const c = Math.cos(radZ), s = Math.sin(radZ);
     return[
       c,  s, 0, 0,
