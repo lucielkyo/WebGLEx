@@ -165,37 +165,22 @@ async function main(){
     render(app);
   });
 
-  //startLoop(app);
+  startLoop(app);
 }
 
-// function startLoop(app, now = 0){
-//   const {state, gl} = app;
-//   const timeDiff = now - app.time;
-//   app.time = now;
+function startLoop(app, now = 0){
+  const {state, gl} = app;
+  const timeDiff = now - app.time;
+  app.time = now;
 
-//   state.offset = state.offset.map((v, i) => v + state.direction[i] * timeDiff * state.speed);
+  state.rotate[1] += 0.01;
 
-//   if(state.offset[0] > gl.canvas.width){
-//     state.direction[0] *= -1;
-//     state.offset[0] = gl.canvas.width;
-//   }
-//   else if (state.offset[0] < 0){
-//     state.direction[0] *= -1;
-//     state.offset[0] = 0;
-//   }
-
-//   if (state.offset[1] > gl.canvas.height) {
-//     state.direction[1] *= -1;
-//     state.offset[1] = gl.canvas.height;
-//   }
-//   else if (state.offset[1] < 0){
-//     state.direction[1] *= -1;
-//     state.offset[1] = 0;
-//   }
-
-//   render(app);
-//   requestAnimationFrame(now =>startLoop(app,now))
-// }
+  if(state.rotate[1] > 360){
+    state.rotate[1] = 0;
+  }
+  render(app);
+  requestAnimationFrame(now =>startLoop(app,now))
+}
 
 main();
 
