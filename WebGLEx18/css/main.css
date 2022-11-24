@@ -1,0 +1,25 @@
+.welcome{
+	position: relative;
+	height: 2rem;
+	margin: 1rem;
+	color: orange;
+	font-size: 25px;
+	font-family: monospace;
+}
+#controls{
+	position: fixed;
+	top:  0;
+	right: 0;
+	margin: 1rem;
+	color: orange;
+	font-size: 25px;
+	font-family: monospace;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+  }
+  #canvas {
+    width: 100%;
+    height: 100%;
+  }
