@@ -277,7 +277,7 @@ function degToRad(deg) {
 }
 
 //鍵盤控制
-function handleKeyDown(app, event) {
+function handleKeyDown(app) {
 
 	$(document).keydown(function () {
 		switch (event.code) {
@@ -300,7 +300,7 @@ function handleKeyDown(app, event) {
 		}
 	});
 }
-function handleKeyUp(app,event) {
+function handleKeyUp(app) {
 	$(document).keyup(function () {
 		switch (event.code) {
 			case 'KeyA':
