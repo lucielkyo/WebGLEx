@@ -3,7 +3,7 @@
 各種WebGL筆記，基本的 <a href="https://ithelp.ithome.com.tw/users/20140099/ironman/3929">範例教學來自西瓜</a>，</br>
 稍微修改成可使用jQuery的版本。
 
-進度：3D相機視角可點選/觸控/鍵盤移動。
+進度：多個圖形。
 
 Some WebGL practice with <a href="https://ithelp.ithome.com.tw/users/20140099/ironman/3929">PastLeo's Examples</a></br>
 Added jQuery-3.6.1.min.js
